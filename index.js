@@ -13,6 +13,10 @@ router.get('/', ctx => {
   ctx.body = 're:invent 2018!'
 })
 
+router.get('/party', ctx => {
+  ctx.body = 'secret party location is: The Mirage'
+})
+
 app.use(router.routes()).use(router.allowedMethods())
 
 console.log('Starting Koa server on port 8000')
