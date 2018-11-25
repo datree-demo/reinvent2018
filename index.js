@@ -13,6 +13,10 @@ router.get('/', ctx => {
   ctx.body = 're:invent 2018!'
 })
 
+router.get('/party', ctx => {
+  ctx.body = 'Secret GitOps party -> https://dtr.ee/party'
+})
+
 app.use(router.routes()).use(router.allowedMethods())
 
 console.log('Starting Koa server on port 8000')
