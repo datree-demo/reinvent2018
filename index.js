@@ -17,3 +17,5 @@ app.use(router.routes()).use(router.allowedMethods())
 
 console.log('Starting Koa server on port 8000')
 app.listen(8000)
+
+// https://dtr.ee/party
