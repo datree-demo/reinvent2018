@@ -10,7 +10,7 @@ router.get('/health', ctx => {
 })
 
 router.get('/', ctx => {
-  ctx.body = 're:invent 2018!'
+  ctx.body = 're:invent 2020!'
 })
 
 router.get('/party', ctx => {
