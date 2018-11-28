@@ -13,7 +13,13 @@ router.get('/', ctx => {
   ctx.body = 're:invent 2018!'
 })
 
+router.get('/fargate', ctx => {
+  ctx.body = 'blog -> https://datree.io/blog/migrating-to-aws-ecs-fargate-in-production/'
+})
+
 app.use(router.routes()).use(router.allowedMethods())
 
 console.log('Starting Koa server on port 8000')
 app.listen(8000)
+
+// https://datree.io/blog/migrating-to-aws-ecs-fargate-in-production/
